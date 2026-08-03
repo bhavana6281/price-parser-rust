@@ -16,6 +16,7 @@ jobs:
         with:
           python-version: '3.12'
       - run: python tools/generate_currency_data.py
+      - run: rustfmt src/currency_data.rs
       - run: git diff --exit-code -- src/currency_data.rs
       - run: cargo fmt --check
       - run: cargo clippy --all-targets --all-features -- -D warnings
