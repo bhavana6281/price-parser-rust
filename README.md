@@ -21,9 +21,6 @@ Implemented behavior includes:
 - decimal values represented with `rust_decimal::Decimal` rather than `f64`;
 - first-party unsafe code prohibited by `#![forbid(unsafe_code)]`.
 
-**Do not claim 100% parity or a speedup until `make verify` and `make bench` have
-produced evidence on the exact submission commit.**
-
 ## Build and use
 
 ```bash
