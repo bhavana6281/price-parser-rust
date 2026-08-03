@@ -1,0 +1,60 @@
+{
+  "status": "complete",
+  "steady_state": {
+    "environment": {
+      "platform": "macOS-15.7.1-arm64-arm-64bit-Mach-O",
+      "machine": "arm64",
+      "python": "3.13.13"
+    },
+    "methodology": "Persistent JSONL process for each implementation; identical request corpus and serialization boundary.",
+    "corpus_sha256": "992c4c3d1a1d57e03aabef9f91708bd45d289c97c585e5c46096d024271bbeea",
+    "corpus_cases": 5000,
+    "warmups": 2,
+    "rounds": 3,
+    "python": {
+      "requests": 15000.0,
+      "elapsed_seconds": 0.3738047920051031,
+      "throughput_requests_per_second": 40127.89648719972,
+      "latency_median_ms": 0.023959,
+      "latency_p95_ms": 0.030958,
+      "latency_p99_ms": 0.038167
+    },
+    "rust": {
+      "requests": 15000.0,
+      "elapsed_seconds": 0.2964946669526398,
+      "throughput_requests_per_second": 50591.129190178675,
+      "latency_median_ms": 0.018084,
+      "latency_p95_ms": 0.027583,
+      "latency_p99_ms": 0.045042
+    },
+    "speedup": 1.2607471016158693
+  },
+  "cold_start": {
+    "environment": {
+      "platform": "macOS-15.7.1-arm64-arm-64bit-Mach-O",
+      "machine": "arm64",
+      "python": "3.13.13"
+    },
+    "methodology": "Fresh process for each sample; import/startup plus one parse; stdout discarded.",
+    "python": {
+      "rounds": 100.0,
+      "median_ms": 67.2412915,
+      "p95_ms": 76.773,
+      "p99_ms": 82.102375,
+      "min_ms": 64.61575,
+      "max_ms": 110.378666
+    },
+    "rust": {
+      "rounds": 100.0,
+      "median_ms": 4.188458499999999,
+      "p95_ms": 4.687,
+      "p99_ms": 4.850958,
+      "min_ms": 3.84725,
+      "max_ms": 4.952
+    }
+  },
+  "memory": {
+    "status": "not_run",
+    "reason": "Run make bench on Linux with GNU time."
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "seed": 20260802,
+  "requested_duration_seconds": 10.0,
+  "actual_duration_seconds": 10.003,
+  "cases": 201245,
+  "divergence_count": 0,
+  "divergences": []
+}

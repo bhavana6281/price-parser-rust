@@ -1,0 +1,9 @@
+{
+  "tests": 1193,
+  "passed": 1059,
+  "failed": 0,
+  "errors": 0,
+  "skipped_or_xfailed": 134,
+  "executed_pass_rate_percent": 100.0,
+  "source": "artifacts/original-tests.xml"
+}

@@ -1,0 +1,11 @@
+[port_mortem]
+track = "D"
+source_url = "https://github.com/scrapinghub/price-parser"
+kickoff_hash = "ea535c0"
+target_language = "rust"
+original_language = "python"
+
+[metadata]
+project_name = "price-parser-rust"
+description = "Behavior-focused Rust port of ScrapingHub's price-parser library."
+author = "DevThreads"

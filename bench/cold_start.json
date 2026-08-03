@@ -1,0 +1,24 @@
+{
+  "environment": {
+    "platform": "macOS-15.7.1-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "python": "3.13.13"
+  },
+  "methodology": "Fresh process for each sample; import/startup plus one parse; stdout discarded.",
+  "python": {
+    "rounds": 100.0,
+    "median_ms": 67.2412915,
+    "p95_ms": 76.773,
+    "p99_ms": 82.102375,
+    "min_ms": 64.61575,
+    "max_ms": 110.378666
+  },
+  "rust": {
+    "rounds": 100.0,
+    "median_ms": 4.188458499999999,
+    "p95_ms": 4.687,
+    "p99_ms": 4.850958,
+    "min_ms": 3.84725,
+    "max_ms": 4.952
+  }
+}
