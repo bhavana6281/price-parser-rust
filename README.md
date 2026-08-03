@@ -11,12 +11,6 @@ The project separates the production implementation from the proof machinery:
 - `fuzz/`: persistent Python-versus-Rust differential harness;
 - `bench/`: shared-corpus latency, startup, throughput, and RSS measurements.
 
-## Evidence status
-
-The code and verification infrastructure are present, but final claims must come
-from the submission commit. See `STATUS.md` before quoting parity or performance.
-The repository deliberately ships benchmark outputs as `not_run` until generated.
-
 Implemented behavior includes:
 
 - currency hints, explicit decimal separators, and digit-group separators;
